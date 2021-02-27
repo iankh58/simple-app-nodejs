@@ -21,11 +21,11 @@ exports.process = async (req, res) => {
         }
 
         res.status(200).json({
-            message: "Process success"
+            message: "Process Success"
         });
     } catch(error){
         res.status(500).json({
-            message: "Process error",
+            message: "Process Error",
             error: error.message
         });
     }
