@@ -1,9 +1,10 @@
 const env = {
-    database: 'simple-db',
     username: 'postgres',
     password: 'qazwsxpol',
     host: 'localhost',
-    dialect: 'postgres'
+    port: '5432',
+    dialect: 'postgres',
+    dbname: 'simple-db'
   };
   
   module.exports = env;

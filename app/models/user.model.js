@@ -6,7 +6,10 @@ module.exports = (sequelize, Sequelize) => {
       },
 	  username: {
 			type: Sequelize.STRING
-	  }
+      },
+      type: {
+            type: Sequelize.STRING
+      },
 	});
 	
 	return User;
