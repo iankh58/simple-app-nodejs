@@ -1,16 +1,20 @@
 module.exports = (sequelize, Sequelize) => {
-	const User = sequelize.define('users', {	
-	  id: {
+	const DbData = sequelize.define('db_data', {	
+	id: {
             type: Sequelize.NUMERIC,
             primaryKey: true
       },
-	  username: {
+	content: {
 			type: Sequelize.STRING
       },
-      type: {
+      key: {
             type: Sequelize.STRING
       },
+      updatedOn: {
+            type: Sequelize.DATE,
+            fieldName: 'updatedOn'
+      }
 	});
 	
-	return User;
+	return DbData;
 }

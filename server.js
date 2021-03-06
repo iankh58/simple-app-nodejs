@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 
 var bodyParser = require('body-parser');
-let userRouter = require('./app/routers/user.router.js');
+let dbDataRouter = require('./app/routers/dbdata.router.js');
 
 app.use(bodyParser.json());
-app.use('/api/users/', userRouter);
+app.use('/api', dbDataRouter);
 
   //create a server
 const server = app.listen(4001, function () {
